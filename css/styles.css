@@ -300,12 +300,10 @@ link {
 }
 
 .social-icon {
+    display: flex;
     background-color: #4D5AE5;
-    border: 1px solid #4D5AE5;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-   
+    padding: 12px;
 }
 
 /* ===== Portfolio Section ===== */
@@ -386,6 +384,13 @@ link {
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-footer {
+    display: flex;
 }
 
 .logo-studio-second {
@@ -394,11 +399,23 @@ link {
 
 .footer-paragraph {
     width: 264px;
-    height: 112px;
 }
 
 .logo-footer {
     margin-bottom: 16px; 
+}
+
+.logo-footer-wrapper {
+    margin-right: 120px;
+}
+
+.social-media-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .visually-hidden {
