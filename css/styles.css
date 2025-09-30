@@ -455,11 +455,11 @@ link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .container-footer {
     display: flex;
+    align-items: baseline;
 }
 
 .logo-studio-second {
@@ -496,7 +496,7 @@ link {
 }
 
 
-.social-icon-link-footer {
+.social-icons-footer {
     gap: 16px; 
 }
 
