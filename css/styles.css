@@ -49,8 +49,10 @@ img {
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 156px;
-    margin-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1158px;
+    width: 100%;
 }
 
 .medium-text {
@@ -71,12 +73,13 @@ img {
     letter-spacing: 0.02em;
 }
 
-.small-text,
-link {
+.small-text {
+    font-family: "Roboto", sans-serif;
     color: #F4F4FD;
-    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .button {
@@ -106,9 +109,6 @@ link {
 .header-container {
     display: flex;
     justify-content: space-between;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px
 }
 
 
@@ -146,10 +146,13 @@ link {
     display: inline-flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+}
+
+.menu-item-active {
     color: #404bbf;
 }
 
-.menu-item::after {
+.menu-item-active:after {
     content: "";
     position: absolute;
     left: 0;
@@ -159,22 +162,14 @@ link {
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     border-radius: 2px;
-    opacity: 0;
 }
 
-.menu-item:hover::after,
-.menu-item:focus::after,
-.menu-item.active::after {
-    width: 100%;
-    opacity: 1;
-}
 .menu-item:hover,
 .menu-item:focus {
     color: #404bbf;
 }
 
-.nav-items:hover::after,
-.nav-items:focus::after {
+.nav-items::after {
     background-color: #404bbf;
     width: 100%;
 }
@@ -221,6 +216,7 @@ link {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
 }
 
 .hero {
@@ -229,7 +225,7 @@ link {
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    padding: 188px 0;
+    padding: 188px 15px;
 }
 
 .title {
@@ -315,7 +311,6 @@ link {
 .teammate {
     color: #2e2f42;
     text-align: center;
-    margin-bottom: 8px;
 }
 
 .team-card {
@@ -326,6 +321,7 @@ link {
     padding: 32px 0;
     border-radius: 0 0 4px 4px;
     text-align: center;
+    gap: 8px;
 }
 
 .social-icons {
@@ -472,6 +468,7 @@ link {
 
 .logo-footer {
     margin-bottom: 16px; 
+    margin-right: 0;
 }
 
 .logo-footer-wrapper {
